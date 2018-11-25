@@ -151,7 +151,7 @@ header {
   }
 
   &-content {
-    font-size: 1.1rem;
+    font-size: 1.32rem;
     font-family: "Open Sans", sans-serif;
     text-transform: initial;
     // hyphens: auto;
@@ -272,6 +272,7 @@ header {
   }
 }
 .footer {
+  position: relative;
   background: rgba(0, 0, 0, 0.8);
   padding: 1rem;
   color: white;
@@ -279,9 +280,15 @@ header {
     text-decoration: none;
     padding: 0.5rem;
   }
-  // i {
-  //   overflow: hidden;
-  // }
+  .tooltip {
+    position: absolute;
+    text-align: right;
+    top: 30px !important;
+    right: 10px !important;
+    a {
+      color: white;
+    }
+  }
   .git,
   .lin {
     color: white;
