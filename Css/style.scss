@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil|Open+Sans|Roboto");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.9;
+  width: 100vw;
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  // padding: 2rem;
+  // overflow: hidden;
+}
+.main {
+  width: 100%;
+  height: 95vh;
+  background: url("https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  // background: url("https://images.pexels.com/photos/1111597/pexels-photo-1111597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%);
+}
+
+.header {
+  &-content {
+    display: inline-block;
+    margin: 28vh auto;
+    z-index: 2;
+
+    padding: 1rem;
+
+    .hello {
+      letter-spacing: 5px;
+      font-size: 1.7rem;
+      font-family: "Roboto", sans-serif;
+      color: white;
+      // color: transparent;
+      // background-image: linear-gradient(to right, #00b09b, #96c93d);
+      // -webkit-background-clip: text;
+    }
+    .name {
+      letter-spacing: 5px;
+      font-size: 2.2rem;
+      font-family: "Allerta Stencil", sans-serif;
+      text-transform: uppercase;
+
+      color: white;
+    }
+    .designation {
+      letter-spacing: 1px;
+      display: inline-block;
+      text-transform: capitalize;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem;
+      // background-image: linear-gradient(to right, #11998e, #38ef7d);
+      // -webkit-background-clip: text;
+      // color: transparent;
+      border-left: 3px solid #c31432;
+      border-right: 3px solid #c31432;
+      padding-left: 1rem;
+      color: white;
+      padding-right: 1rem;
+    }
+    .btn:link,
+    .btn:visited {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 0.9rem;
+      color: white;
+      padding: 0.5rem 2.5rem;
+      background: #111;
+      // border: 1px solid black;
+      border-radius: 100px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      transition: all 0.2s;
+
+      z-index: 1;
+      // overflow: hidden;
+    }
+    .btn::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.2s;
+      background-color: #111;
+    }
+    .btn:hover {
+      box-shadow: 1rem 2rem 5rem rgba(0, 0, 0, 0.5);
+    }
+    .btn:hover::after {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+}
+.particle {
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  z-index: 0;
+}
+.about {
+  padding-top: 9rem;
+  width: 100%;
+  // background: #999;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-top: -15vh;
+  &-section {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    font-family: "Allerta Stencil", sans-serif;
+    letter-spacing: 5px;
+    color: crimson;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-bottom: 5px solid #c31432;
+      transform: translate(-100%, 0);
+      transition: all 0.7s;
+    }
+    &:hover::after {
+      transform: translate(0, 0);
+    }
+  }
+
+  &-content {
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    text-transform: initial;
+    // hyphens: auto;
+    // color: white;
+  }
+  &-skills {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    &-icon {
+      padding: 2rem;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-column-gap: 25px;
+
+      i {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+.projects {
+  padding-top: 3rem;
+  box-sizing: inherit;
+  width: 100%;
+  // background: #999;
+  // padding-left: 3rem;
+  // padding-right: 3rem;
+  &-section {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    font-family: "Allerta Stencil", sans-serif;
+    letter-spacing: 5px;
+    color: crimson;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-bottom: 5px solid #c31432;
+      transform: translate(-100%, 0);
+      transition: all 0.7s;
+    }
+    &:hover::after {
+      transform: translate(0, 0);
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    img {
+      padding: 2rem !important;
+    }
+    &-blog {
+      color: transparent;
+      text-decoration: none;
+    }
+    &-cgp {
+      color: transparent;
+      text-decoration: none;
+    }
+    &-photo {
+      color: transparent;
+      text-decoration: none;
+    }
+    &-task {
+      color: transparent;
+      text-decoration: none;
+    }
+  }
+}
