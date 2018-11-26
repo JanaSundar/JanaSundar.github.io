@@ -348,6 +348,17 @@ header {
   color: #0077b5;
 }
 
+.project {
+  position: relative;
+}
+
+.project-blog h4, .project-cgp h4, .project-task h4, .project-photo h4 {
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2px;
+  color: coral;
+}
+
 @media (min-width: 100px) and (max-width: 600px) {
   .header-content .hello {
     letter-spacing: 2px;

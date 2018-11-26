@@ -7,6 +7,7 @@
   text-align: center;
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -17,11 +18,13 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
 header {
   width: 100%;
   // padding: 2rem;
   // overflow: hidden;
 }
+
 .main {
   width: 100%;
   height: 95vh;
@@ -50,6 +53,7 @@ header {
       // background-image: linear-gradient(to right, #00b09b, #96c93d);
       // -webkit-background-clip: text;
     }
+
     .name {
       letter-spacing: 5px;
       font-size: 2.2rem;
@@ -58,6 +62,7 @@ header {
 
       color: white;
     }
+
     .designation {
       letter-spacing: 1px;
       display: inline-block;
@@ -73,6 +78,7 @@ header {
       color: white;
       padding-right: 1rem;
     }
+
     .btn:link,
     .btn:visited {
       position: relative;
@@ -92,6 +98,7 @@ header {
       z-index: 1;
       // overflow: hidden;
     }
+
     .btn::after {
       content: "";
       position: absolute;
@@ -105,21 +112,25 @@ header {
       transition: all 0.2s;
       background-color: #111;
     }
+
     .btn:hover {
       box-shadow: 1rem 2rem 5rem rgba(0, 0, 0, 0.5);
     }
+
     .btn:hover::after {
       transform: scale(1.5);
       opacity: 0;
     }
   }
 }
+
 .particle {
   position: absolute;
   height: inherit;
   width: 100%;
   z-index: 0;
 }
+
 .about {
   padding-top: 9rem;
   width: 100%;
@@ -127,6 +138,7 @@ header {
   padding-left: 4rem;
   padding-right: 4rem;
   margin-top: -15vh;
+
   &-section {
     position: relative;
     display: inline-block;
@@ -135,6 +147,7 @@ header {
     letter-spacing: 5px;
     color: crimson;
     overflow: hidden;
+
     &::after {
       content: "";
       position: absolute;
@@ -145,6 +158,7 @@ header {
       transform: translate(-100%, 0);
       transition: all 0.7s;
     }
+
     &:hover::after {
       transform: translate(0, 0);
     }
@@ -157,12 +171,14 @@ header {
     // hyphens: auto;
     // color: white;
   }
+
   &-skills {
     margin-top: 2rem;
     font-size: 1.4rem;
     letter-spacing: 3px;
     font-family: "Roboto", sans-serif;
     text-transform: capitalize;
+
     &-icon {
       padding: 2rem;
       display: grid;
@@ -176,10 +192,12 @@ header {
     }
   }
 }
+
 .projects {
   padding-top: 3rem;
   box-sizing: inherit;
   width: 100%;
+
   // background: #999;
   // padding-left: 3rem;
   // padding-right: 3rem;
@@ -192,6 +210,7 @@ header {
     letter-spacing: 5px;
     color: crimson;
     overflow: hidden;
+
     &::after {
       content: "";
       position: absolute;
@@ -202,36 +221,44 @@ header {
       transform: translate(-100%, 0);
       transition: all 0.7s;
     }
+
     &:hover::after {
       transform: translate(0, 0);
     }
   }
+
   &-content {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+
     img {
       padding: 2rem !important;
     }
+
     &-blog {
       color: transparent;
       text-decoration: none;
     }
+
     &-cgp {
       color: transparent;
       text-decoration: none;
     }
+
     &-photo {
       color: transparent;
       text-decoration: none;
     }
+
     &-task {
       color: transparent;
       text-decoration: none;
     }
   }
 }
+
 .contact {
   padding: 3rem;
   box-sizing: inherit;
@@ -247,6 +274,7 @@ header {
     color: crimson;
     overflow: hidden;
     text-transform: capitalize;
+
     &::after {
       content: "";
       position: absolute;
@@ -257,57 +285,90 @@ header {
       transform: translate(-100%, 0);
       transition: all 0.7s;
     }
+
     &:hover::after {
       transform: translate(0, 0);
     }
   }
+
   .email {
     font-size: 1.2rem;
     text-transform: capitalize;
     color: crimson;
   }
+
   strong {
     font-size: 1.1rem;
     color: #666;
   }
 }
+
 .footer {
   position: relative;
   background: rgba(0, 0, 0, 0.8);
   padding: 1rem;
   color: white;
+
   a {
     text-decoration: none;
     padding: 0.5rem;
   }
+
   .tooltip {
     position: absolute;
     text-align: right;
     top: 30px !important;
     right: 10px !important;
+
     a {
       color: white;
     }
   }
+
   .git,
   .lin {
     color: white;
     transition: all 0.5s;
   }
+
   p {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 0.8rem;
     text-transform: capitalize;
   }
+
   .git:hover {
     color: #6e5494;
     // background: white;
   }
+
   .lin:hover {
     color: #0077b5;
   }
 }
+
+.project {
+  position: relative;
+
+  &-blog,
+  &-cgp,
+  &-task,
+  &-photo {
+    h4 {
+
+      font-size: 1.3rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      letter-spacing: 2px;
+      color: coral;
+    }
+  }
+
+}
+
+
+
+
 @media (min-width: 100px) and (max-width: 600px) {
   .header {
     &-content {
@@ -315,14 +376,17 @@ header {
         letter-spacing: 2px;
         font-size: 1.4rem;
       }
+
       .name {
         letter-spacing: 3px;
         font-size: 1.7rem;
       }
+
       .designation {
         font-size: 1.2rem;
         letter-spacing: 2px;
       }
+
       .btn:link,
       .btn:visited {
         padding: 0.4rem 2.2rem;
@@ -330,21 +394,26 @@ header {
       }
     }
   }
+
   .about {
     &-section {
       font-size: 1.7rem;
     }
+
     &-content {
       font-size: 0.85rem;
       text-align: left;
     }
+
     &-skills {
       font-size: 1.2rem;
+
       &-icon {
         padding: 1rem;
         grid-gap: 15px;
       }
     }
+
     i {
       font-size: 3rem;
     }
@@ -354,11 +423,13 @@ header {
     &-section {
       font-size: 1.7rem;
     }
+
     img {
       width: 300px;
       height: 200px;
     }
   }
+
   .contact {
     &-section {
       font-size: 1.7rem;
