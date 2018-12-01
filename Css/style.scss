@@ -356,18 +356,13 @@ header {
   &-task,
   &-photo {
     h4 {
-
       font-size: 1.3rem;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       letter-spacing: 2px;
       color: coral;
     }
   }
-
 }
-
-
-
 
 @media (min-width: 100px) and (max-width: 600px) {
   .header {
@@ -396,6 +391,7 @@ header {
   }
 
   .about {
+    padding-top: 8rem;
     &-section {
       font-size: 1.7rem;
     }

@@ -354,7 +354,7 @@ header {
 
 .project-blog h4, .project-cgp h4, .project-task h4, .project-photo h4 {
   font-size: 1.3rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 2px;
   color: coral;
 }
@@ -376,6 +376,9 @@ header {
   .header-content .btn:visited {
     padding: 0.4rem 2.2rem;
     font-size: 1rem;
+  }
+  .about {
+    padding-top: 8rem;
   }
   .about-section {
     font-size: 1.7rem;
